@@ -1,0 +1,151 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+
+/* Universal CSS */
+*{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    background-color: #ffd98b;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Header */
+
+header,
+main section,
+ul {
+    display: flex;
+}
+
+header {
+    margin: 1rem;
+    justify-content: space-between;
+}
+
+.icon{
+    height: 40px;
+}
+
+/* Navigation */
+
+li {
+    padding: 0 1rem;
+    color: black;
+
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+a{
+    color: black;
+}
+
+/* Main */
+
+.background {
+    background-color: #ff8675;
+    height: 600px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+.background > div{
+    background-color: #ffb275;
+    width: 95%;
+    height: 550px;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+}
+
+.three{
+    width: 33%;
+    display: inline-block;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.big {
+    flex-grow: 2;
+}
+
+img.three {
+    width: 40%;
+    height: auto;
+}
+
+.three img{
+    width: 30px;
+}
+
+/* Menu */
+
+.menu{
+    height: 300px;
+}
+
+.menu section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.menu section div{
+    background-color: #c4e6c0;
+    padding: 5%;
+    margin: 5%;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu section div *{
+    margin: 4px;
+}
+/* Footer */
+
+footer{
+    text-align: center;
+    padding: 2%;
+    background-color: #d5e5ee;
+    margin: 0;
+}
